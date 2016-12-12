@@ -1,0 +1,121 @@
+#widget_scroll_container {
+	width: 1200px;
+}
+
+div.widget_container {
+	width: 1200px;
+}
+
+	div.widget_container.half {
+		width: 400px;
+	}
+
+@media screen and (max-height: 680px) {
+	#widget_scroll_container {
+		width: 1200px;
+	}
+
+	div.widget_container {
+		width: 900px;
+	}
+
+		div.widget_container.half {
+			width: 300px;
+		}
+}
+
+/*page*/
+
+body {
+	cursor: default;
+	font-family: Microsoft YaHei,Verdana,Microsoft YaHei, Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+.transparent10 {
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.transparent7 {
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;
+}
+
+.transparent6 {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+}
+
+.transparent5 {
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+.foot_copy {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	min-height: 30px;
+	height: auto;
+	background: #000;
+	color: #999;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+	.foot_copy .foot_copy_container {
+		margin: 0 auto;
+		max-width: 900px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.foot_copy a {
+		color: #999;
+		text-decoration: none;
+		cursor: default;
+	}
+
+		.foot_copy a:hover {
+			color: #d9534f;
+			cursor: pointer;
+		}
+
+#widget_scroll_container {
+	position: relative;
+	margin-left: 20px;
+}
+
+.navbar-brand {
+	background: url("LogoCn48.png") 0 center no-repeat;
+	width: 200px;
+	height: 60px;
+	display: block;
+	margin-left: 10px;
+}
+
+.widget a {
+	text-decoration: none;
+}
+
+div.widget div.main > span {
+	text-transform: none;
+}
+div.widget:hover {
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+	border: none;
+	-webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+}
