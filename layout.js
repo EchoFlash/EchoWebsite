@@ -212,6 +212,22 @@ var Layout = function () {
             }
         });
     }
+    
+	var counter = function() {
+		$('.js-counter').countTo({
+			 formatter: function (value, options) {
+	      return value.toFixed(options.decimals);
+	    },
+		});
+	};
+
+	var counterWayPoint = function() {
+		if ($('#facts-block').length > 0 ) {
+			$('#facts-block').waypoint( function( direction ) {										
+				setTimeout( counter , 400);
+			} , { offset: '90%' } );
+		}
+	};
 
     return {
         init: function () {
@@ -230,6 +246,7 @@ var Layout = function () {
             valignCenterMessage();
             valignCenterPortfolio();
             handleTheme();
+		    counterWayPoint();
         },
     };
 }();
