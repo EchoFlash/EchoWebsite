@@ -92,6 +92,9 @@
 	.facts-block .item strong {
 	  font-size: 40px;
 	}
+	.facts-block .item b {
+	  font-size: 40px;
+	}
 
 	.ab-cirle-blue {
 	  bottom: 2px;
